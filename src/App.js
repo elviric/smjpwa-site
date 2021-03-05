@@ -3,7 +3,8 @@ import ModalD from "./components/ModalD";
 
 function App() {
   const [modalShow, setModalShow] = useState(false);
-  const [name, setName] = useState("");
+  const [address, setAddr] = useState("");
+  
 
   return (
     <main>
@@ -13,8 +14,8 @@ function App() {
           type="text"
           className="address"
           placeholder="Enter you Address..."
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={address}
+          onChange={(e) => setAddr(e.target.value)}
         />
         <button onClick={() => setModalShow(true)}>Submit</button>
       </section>
